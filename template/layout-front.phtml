@@ -547,7 +547,7 @@ $breadcrumbs = $this->breadcrumb(array('prefix' => array(array('label' => __('Ho
                 <h2>تماس با ما</h2>
             </div>
             <!-- <hr class="colored"> -->
-            <div class="row">
+            <?php /* <div class="row">
                 <?php $locations = array(
                     'latitude'  => '35', // latitude number
                     'longitude' => '51', // longitude number
@@ -558,13 +558,21 @@ $breadcrumbs = $this->breadcrumb(array('prefix' => array(array('label' => __('Ho
                     <br />
                     <?php echo $this->googleMap($locations); ?>
                 </div>
+
+            </div> */ ?>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <br />
+                    <p>تلفن : ۰۰۰۰۰۰۰</p>
+                    <p>فکس : ۰۰۰۰۰۰۰</p>
+                    <p>آدرس : تهران ، میدان انقلاب</p>
+                    <p>ایمیل : info@saramadi.com</p>
+                </div>
             </div>
             <div class="row">
                 <div class="text-left col-md-6" data-rel="license">تمام حقوق  نرم افزار برای <a href="<?php echo Pi::url($this->url('home')); ?>" title="<?php echo _escape($sitename); ?>"><?php echo _escape($sitename); ?></a> محفوظ است.</div>
                 <div class="text-right col-md-6" data-rel="license">طراحی و توسعه <a title="فراگسترش" href="http://www.faragostaresh.com" target="_blank">فراگسترش</a></div>
             </div>
-
-
         </div>
     </section>
     <?php /* <footer class="footer" style="background-image: url('<?php echo $this->assetTheme('image/bg-footer.jpg'); ?>')">
